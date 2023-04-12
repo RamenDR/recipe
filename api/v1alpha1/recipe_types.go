@@ -73,6 +73,12 @@ type Group struct {
 	Essential *bool `json:"essential,omitempty"`
 }
 
+const (
+	CaptureWorkflowNameDefault = "capture"
+	RecoverWorkflowNameDefault = "recover"
+	VolumeGroupNameDefault     = "volumes"
+)
+
 // Workflow is the sequence of actions to take
 type Workflow struct {
 	// Name of recipe. Names "backup" and "restore" are reserved and implicitly used by default for
