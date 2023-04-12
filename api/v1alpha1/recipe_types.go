@@ -49,9 +49,9 @@ type Group struct {
 	// +kubebuilder:validation:Enum=volume;resource
 	Type string `json:"type"`
 	// List of resource types to include. If unspecified, all resource types are included.
-	IncludedResourceTypes []string `json:"includedResourceTypes,omitempty"`
+	IncludedResources []string `json:"includedResources,omitempty"`
 	// List of resource types to exclude
-	ExcludedResourceTypes []string `json:"excludedResourceTypes,omitempty"`
+	ExcludedResources []string `json:"excludedResources,omitempty"`
 	// Select items based on label
 	LabelSelector metav1.LabelSelector `json:"labelSelector,omitempty"`
 	// If specified, resource's object name needs to match this expression. Valid for volume groups only.

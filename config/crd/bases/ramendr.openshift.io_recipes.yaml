@@ -56,7 +56,7 @@ spec:
                       description: Defaults to true, if set to false, a failure is
                         not necessarily handled as fatal
                       type: boolean
-                    excludedResourceTypes:
+                    excludedResources:
                       description: List of resource types to exclude
                       items:
                         type: string
@@ -66,7 +66,7 @@ spec:
                         If nil or true, cluster-scoped resources are included if they
                         are associated with the included namespace-scoped resources
                       type: boolean
-                    includedResourceTypes:
+                    includedResources:
                       description: List of resource types to include. If unspecified,
                         all resource types are included.
                       items:
